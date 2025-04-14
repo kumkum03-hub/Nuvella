@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Nuvella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('bg3.jpg');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #2d7c6b;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 16px;
+    }
+
+    .login-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #2d7c6b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #1e5b46;
+    }
+
+    .links {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: #2d7c6b;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+    a{
+    color: whitesmoke;
+  }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;          
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    background: rgba(255,255,255,0.1);
+    z-index: 1000;
+    border-radius: 20px;
+    width: 98.7%;
+    border-style: outset;
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  
+ 
+  .nav.hidden {
+    transform: translateY(-100%);
+  }
+  
+
+
+  
+  .n{
+    padding: 15px;
+    
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .n:hover{
+    color: #ffd700;
+  }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="navbar"> 
+    <a href="#Nuvella" id="n" style="font-size: 35px;display: flex;align-items: center;gap: 10px;"><img src="logo2.png" style="height: 45px;width: 55px;border-radius: 50%;box-shadow: 0 0 25px #fff;"></img><span id="span"><span style="color: #ffd700;">Nuv</span>ella</span>
+
+
+    <a href="newwebpage.html" class="n" style="margin-left: 700px;">Home</a>
+    <a href="login.html" class="n" >LogIn</a>
+    <a href="Aboutus.html" class="n">About Us</a>
+    <a href="contact.html" class="n">Contact Us</a>
+
+</nav>
+  <div class="login-container">
+    <h2>Welcome back to Nuvella 💚</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button class="login-btn" type="submit" id="login" onclick="myAlert()">Login</button>
+    </form>
+    <div class="links">
+      <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+  </div>
+<script>
+    function myAlert(){
+        alert("Successfully Logged In");
+    }
+</script>
+</body>
+</html>

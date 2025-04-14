@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuvella</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="new.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preload" as="image" href="bg3.webp">
+<link rel="preload" as="font" href="https://fonts.gstatic.com/…Quicksand.woff2" type="font/woff2" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=EB+Garamond&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+
+    <nav class="nav" id="navbar"> 
+      <a href="#Nuvella" id="n" style="font-size: 35px;display: flex;align-items: center;gap: 10px;"><img src="logo2.png" style="height: 45px;width: 55px;border-radius: 50%;box-shadow: 0 0 25px #fff;"></img><span id="span"><span style="color: #ffd700;">Nuv</span>ella</span>
+  
+      <div class="search-container">
+      <input type="text" placeholder="  Search..." id="search">
+      <button type="submit" id="btn"><i class="fa fa-search"></i></button>
+      </div>
+  
+      <a href="newwebpage.html" class="n" style="margin-left: 150px;">Home</a>
+      <a href="login.html" class="n" >LogIn</a>
+      <a href="Aboutus.html" class="n">About Us</a>
+      <a href="contact.html" class="n">Contact Us</a>
+  
+  </nav>
+
+    <img id="logo" src="logo2.png" loading="lazy" alt="Logo" />
+    <h1 id="name">Nuvella</h1>
+    <p id="tagline">Step into a realm where every page is a portal, and every story a spell</p>
+    <a href="#explore" style="color: #3c2e53;">
+      <button class="enter-btn">Enter Library</button>
+    </a>
+    
+    <p class="scroll-down">⬇ Scroll to explore ⬇</p>
+  </div>
+
+
+  <div class="section" id="section">
+    
+ <section class="explore-section" id="explore">
+    <h2 class="title">Choose Your Escape</h2>
+    <div class="genre-container">
+
+      <div class="genre-card" id="card1">
+        <img src="rom.jpg" alt="Romance Genre Image">
+        <i style="background-color: black;width: 150px;">💕 Romance</i>
+        <p class="desc">Heartbeats, butterflies, and unforgettable love</p>
+      </div>
+      
+      <div class="genre-card" id="card2">
+        <img src="mystery.jpg" alt="Romance Genre Image">
+        <i style="background-color: black;width: 150px;">💀 Mystery</i>
+        <p class="desc">Secrets. Twists. The truth is waiting.</p>
+        </div>
+
+      <div class="genre-card" id="card3">
+        <img src="selfhelp.jpg" alt="Romance Genre Image">
+        <i style="background-color: black;width: 150px;">💡 Self-Help</i>
+        <p class="desc">Grow, glow, and become your best self.</p>
+        </div>
+
+      <div class="genre-card">
+        <img src="historical.jpg" alt="Romance Genre Image">
+        <i style="background-color: black;width: 150px;">🎩 Historical</i>
+        <p class="desc">Travel through time with tales from the past.</p>
+      </div>
+
+      <div class="genre-card">
+        <img src="scifi.jpg" alt="Romance Genre Image">
+        <i style="background-color: black;width: 150px;">🌌 Science Fiction</i>
+        <p class="desc">Beyond stars, into the unknown futures.</p>
+      </div>
+
+      <div class="genre-card">
+        <img src="horror.jpg" alt="Romance Genre Image">
+        <i style="background-color: black;width: 150px;">💀Horror</i>
+        <p class="desc">Chills, screams, and stories that haunt.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Carousel 1 -->
+  <section class="latest" style="background-image: url(bg3.jpg);">
+   
+    <h2 class="title" style="color: #ffd700;"> Browse Latest Uploads</h2>
+    <div class="container">
+    <div class="carousel-wrapper">
+      <h3>✨ New Arrivals</h3>
+      <div class="carousel-container">
+        <button class="arrow left" onclick="scrollCarousel('carousel1', -1)">&#8592;</button>
+        <div class="carousel-row" id="carousel1">
+
+          <div class="book-card">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMzFauFHVQTkklojHoIspzFxRzx_G-p5VgKg-XhmCiwUz2wnq1" alt="">
+            <h4>The Great Gatsby</h4>
+          </div>
+
+          <div class="book-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR819TtvIV0JJ5_Wzzfcnk3y2eXfPpamZmdbrg5ofv0Ydafpw_f" alt="">
+            <h4>To Kill A MokingBird</h4>
+          </div>
+
+          <div class="book-card">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlt9G-RrRqT-xmDmcW28hmK8T2TqhzUs8NsRNnymp63AnEAuJz" alt="">
+            <h4>The Catcher In The Rye</h4>
+          </div>
+          <div class="book-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlGp1pBUTKRINYV6FJDLB8BHP8lwRJ49sZcGvM7f8NIz1XNhoa" alt="">
+            <h4>The Fifth Season</h4>
+          </div>
+
+          <div class="book-card">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLct7Y4K4CNDK84kfwEqnRmvgbV2xHIDiBvW87DMHvuHtOj0y6" alt="">
+            <h4>The OverStory</h4>
+          </div>
+
+        </div>
+
+        <button class="arrow right" onclick="scrollCarousel('carousel1', 1)">&#8594;</button>
+      </div>
+    </div>
+    <!-- Carousel 2 -->
+  <div class="carousel-wrapper">
+    <h3>🌟 Trending Now</h3>
+    <div class="carousel-container">
+      <button class="arrow left" onclick="scrollCarousel('carousel2', -1)">&#8592;</button>
+<div class="carousel-row" id="carousel2">
+
+        <div class="book-card">
+          <img src="https://images4.penguinrandomhouse.com/cover/9780593545140" alt="">
+          <h4>All That Life Can Afford</h4>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1722030581i/216875430.jpg" alt="">
+          <h4>Not a Speck of Light</h4>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600985305i/55446843.jpg" alt="">
+          <h4>Perron Manor</h4>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600022295i/50892288.jpg" alt="">
+          <h4>The Hollow Places</h4>
+        </div>
+
+        <div class="book-card">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1652540668i/61093300.jpg" alt="">
+          <h4>Immoral Origins</h4>
+        </div>
+
+      </div>
+      <button class="arrow right" onclick="scrollCarousel('carousel2', 1)">&#8594;</button>
+    </div>
+  </section>
+ 
+  
+
+    <!-- Recommended -->
+    <section class="latest" style="background-image: url(bg3.jpg);">
+   
+      <h2 class="title" style="color: #ffd700;"> Recommended</h2>
+      <div class="container">
+      <div class="carousel-wrapper">
+        <h3>Top Authors</h3>
+        <div class="carousel-container">
+          <button class="arrow left" onclick="scrollCarousel('carousel1', -1)">&#8592;</button>
+          <div class="carousel-row" id="carousel1">
+  
+            <div class="book-card">
+              <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE9EdW4IsRCSJYyJxefVVsEaZb7CwX4HXVg4Rc28uv64vLhP26" alt="">
+              <h4>Moby Dick</h4>
+            </div>
+  
+            <div class="book-card">
+              <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc2kH61vErh7Nr063wS-ddRMvXPQF5g34W0m3pOjLL7eF8z-6Z" alt="">
+              <h4>Mark Twain </h4>
+            </div>
+  
+            <div class="book-card">
+              <img src="https://m.media-amazon.com/images/I/81A-T+X6ukL._UF894,1000_QL80_.jpg" alt="">
+              <h4>Saraah J Maas</h4>
+            </div>
+            <div class="book-card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlGp1pBUTKRINYV6FJDLB8BHP8lwRJ49sZcGvM7f8NIz1XNhoa" alt="">
+              <h4>The Fifth Season</h4>
+            </div>
+  
+            <div class="book-card">
+              <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLct7Y4K4CNDK84kfwEqnRmvgbV2xHIDiBvW87DMHvuHtOj0y6" alt="">
+              <h4>The OverStory</h4>
+            </div>
+  
+          </div>
+  
+          <button class="arrow right" onclick="scrollCarousel('carousel1', 1)">&#8594;</button>
+        </div>
+      </div>
+      <!-- Rec 2 -->
+    <div class="carousel-wrapper">
+      <h3>Highest Rated</h3>
+      <div class="carousel-container">
+        <button class="arrow left" onclick="scrollCarousel('carousel2', -1)">&#8592;</button>
+  <div class="carousel-row" id="carousel2">
+  
+          <div class="book-card">
+            <img src="https://images4.penguinrandomhouse.com/cover/9780593545140" alt="">
+            <h4>All That Life Can Afford</h4>
+          </div>
+  
+          <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1722030581i/216875430.jpg" alt="">
+            <h4>Not a Speck of Light</h4>
+          </div>
+  
+          <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600985305i/55446843.jpg" alt="">
+            <h4>Perron Manor</h4>
+          </div>
+  
+          <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600022295i/50892288.jpg" alt="">
+            <h4>The Hollow Places</h4>
+          </div>
+  
+          <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1652540668i/61093300.jpg" alt="">
+            <h4>Immoral Origins</h4>
+          </div>
+  
+        </div>
+        <button class="arrow right" onclick="scrollCarousel('carousel2', 1)">&#8594;</button>
+      </div>
+    </section>
+
+
+
+  <section class="reviews">
+    <h2 class="title">🌟 What Readers Say</h2>
+    <div class="review-container">
+  
+      <div class="review-card">
+        <p class="review-text">"Nuvella helped me rediscover my love for reading. Every book feels like a portal to another world!"</p>
+        <h4 class="reviewer">— Aurora M., Dreamer & Booklover</h4>
+      </div>
+  
+      <div class="review-card">
+        <p class="review-text">"The design is stunning! It's like walking through a magical library at midnight."</p>
+        <h4 class="reviewer">— Elias T., Fantasy Addict</h4>
+      </div>
+  
+      <div class="review-card">
+        <p class="review-text">"I found stories that healed me, made me laugh, and stayed in my heart forever."</p>
+        <h4 class="reviewer">— Mira K., Soulful Reader</h4>
+      </div>
+
+      <div class="review-card">
+        <p class="review-text">"Nuvella helped me rediscover my love for reading. Every book feels like a portal to another world!"</p>
+        <h4 class="reviewer">— Aurora M., Dreamer & Booklover</h4>
+      </div>
+  
+      <div class="review-card">
+        <p class="review-text">"The design is stunning! It's like walking through a magical library at midnight."</p>
+        <h4 class="reviewer">— Elias T., Fantasy Addict</h4>
+      </div>
+  
+      <div class="review-card">
+        <p class="review-text">"I found stories that healed me, made me laugh, and stayed in my heart forever."</p>
+        <h4 class="reviewer">— Mira K., Soulful Reader</h4>
+      </div>
+
+      <div class="review-card">
+        <p class="review-text">"Nuvella helped me rediscover my love for reading. Every book feels like a portal to another world!"</p>
+        <h4 class="reviewer">— Aurora M., Dreamer & Booklover</h4>
+      </div>
+  
+      <div class="review-card">
+        <p class="review-text">"The design is stunning! It's like walking through a magical library at midnight."</p>
+        <h4 class="reviewer">— Elias T., Fantasy Addict</h4>
+      </div>
+  
+      <div class="review-card">
+        <p class="review-text">"I found stories that healed me, made me laugh, and stayed in my heart forever."</p>
+        <h4 class="reviewer">— Mira K., Soulful Reader</h4>
+      </div>
+
+    
+  
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+<footer style="background-color: #2a2a2a; color: #fff; padding: 40px 0; text-align: center;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <!-- Footer Logo -->
+    <div>
+      <h3 style="font-family: 'Garamond', serif; font-size: 36px; color: #FFD700; letter-spacing: 2px; text-shadow: 1px 1px 5px #fff;">
+        Nuvella
+      </h3>
+    </div>
+
+    <!-- Social Links -->
+    <div style="margin-top: 20px;">
+      <a href="#" style="color: #FFD700; margin: 0 15px; font-size: 24px; text-decoration: none; transition: all 0.3s ease;">
+        <i class="fab fa-facebook-f"></i> 
+      </a>
+      <a href="#" style="color: #FFD700; margin: 0 15px; font-size: 24px; text-decoration: none; transition: all 0.3s ease;">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" style="color: #FFD700; margin: 0 15px; font-size: 24px; text-decoration: none; transition: all 0.3s ease;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" style="color: #FFD700; margin: 0 15px; font-size: 24px; text-decoration: none; transition: all 0.3s ease;">
+        <i class="fab fa-pinterest"></i>
+      </a>
+    </div>
+
+    <!-- Footer Links -->
+    <div style="margin-top: 30px;">
+      <a href="#" style="color: #ddd; margin: 0 20px; text-decoration: none; font-size: 14px; transition: all 0.3s ease;">Home</a>
+      <a href="#" style="color: #ddd; margin: 0 20px; text-decoration: none; font-size: 14px; transition: all 0.3s ease;">About</a>
+      <a href="#" style="color: #ddd; margin: 0 20px; text-decoration: none; font-size: 14px; transition: all 0.3s ease;">Genres</a>
+      <a href="#" style="color: #ddd; margin: 0 20px; text-decoration: none; font-size: 14px; transition: all 0.3s ease;">Contact</a>
+    </div>
+
+    <!-- Copyright -->
+    <div style="margin-top: 40px; font-size: 14px; color: #bbb;">
+      <p>&copy; 2025 Nuvella. All rights reserved.</p>
+      <p>Created with love, magic &amp; stardust.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <!--end of sections-->
+  </div>
+</section>
+  </div>
+
+  <script src="new.js"> </script>
+</body>
+
+
+</html>

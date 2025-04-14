@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Quicksand:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-image: url('bg3.jpg');
+  background-attachment: scroll;
+}
+
+.header{
+  height: 100px;
+  width: 100px;
+  display: flex;
+}
+
+a{
+  color: whitesmoke;
+}
+.nav{
+height: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px 60px;
+background-color: rgba(255, 255, 255, 0.1);
+
+}
+#n{
+  padding: 5px;
+  
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+
+.search-container  #btn{
+  width: 35px;
+  background-color: #E6FDFF
+}
+
+.search-container  #btn:hover{
+  background-color: #009EAC;
+}
+
+
+#search{
+  padding: 0;
+  margin: 0;
+  border-right: none;
+  font-size: 15px;
+  background-color: #E6FDFF
+}
+
+.search-container{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+#search, #btn {
+  border-radius: 0;
+  height: 30px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+#span:hover{
+  color: #CBFFFA
+}
+
+#n:hover{
+  color: #CBFFFA;
+}
+
+
+
+
+
+

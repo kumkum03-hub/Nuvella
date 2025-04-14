@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Nuvella</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('bg3.jpg');
+      color: #2d7c6b;
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 30px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #2d7c6b;
+      text-align: center;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      color: #1e5b46;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #4a4a4a;
+    }
+
+    .team {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      width: 30%;
+      text-align: center;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #2d7c6b;
+    }
+
+    footer {
+      background-color: #2d7c6b;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-radius: 10px;
+    }
+    .form{
+
+    }
+    #f{
+        width: 300px;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 16px;
+      margin-left: 430px;
+    }
+    .form-btn{
+        margin-top: 20px;
+        margin-left: 440px;
+      width: 300px;
+      padding: 12px;
+      background-color: #2d7c6b;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .form-btn:hover{
+      background-color: #1e5b46;
+    
+    }    a{
+    color: whitesmoke;
+  }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;          
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    background: #011936;
+    z-index: 1000;
+    border-radius: 20px;
+    width: 98.7%;
+    border-style: outset;
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  
+ 
+  .nav.hidden {
+    transform: translateY(-100%);
+  }
+  
+
+
+  
+  .n{
+    padding: 15px;
+    
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .n:hover{
+    color: #ffd700;
+  }
+  </style>
+
+  </style>
+</head>
+<body>
+    <nav class="nav" id="navbar"> 
+        <a href="#Nuvella" id="n" style="font-size: 35px;display: flex;align-items: center;gap: 10px;"><img src="logo2.png" style="height: 45px;width: 55px;border-radius: 50%;box-shadow: 0 0 25px #fff;"></img><span id="span"><span style="color: #ffd700;">Nuv</span>ella</span>
+    
+    
+        <a href="newwebpage.html" class="n" style="margin-left: 600px;">Home</a>
+        <a href="login.html" class="n" >LogIn</a>
+        <a href="Aboutus.html" class="n">About Us</a>
+        <a href="contact.html" class="n">Contact Us</a>
+    
+    </nav>
+  <div class="container">
+    <h1>Contact Us</h1>
+    
+    <div class="section">
+        <h2>Fill Out The Form And We'll Reach Out To You</h2>
+        <form class="form">
+            <input type="text" placeholder="Username" required id="f"><br>
+            <input type="text" placeholder="Full Name" required id="f"><br>
+            <input type="tel" placeholder="Phone No" required id="f"><br>
+            <textarea placeholder="Write Your Query" id="f"></textarea><br>
+            <button class="form-btn" type="submit" id="form-btn" onclick="myAlert()">Submit</button>
+          </form>
+    </div>
+
+
+    <div class="section">
+        <p class="intro-text" style="font-size: 25px;">
+            <h2>You can Contact us on our mail : </h2><br>
+            <h5 style="font-size: 15px;">Kumkum : Kumkumkamthan@gmail.com</h5>
+            <h5 style="font-size: 15px;">Office : office@gmail.com</h5>
+          </p>
+      
+    </div>
+
+    <div class="section">
+        <h2>Give Us A Call On  : </h2>
+      <p>
+       <h4>Office : 9876543321</h4>
+       <h4>Manager : 765432289 </h4>
+      </p>
+    </div>
+
+   
+
+
+  <footer>
+    <p>© 2025 Nuvella. All rights reserved.</p>
+  </footer>
+<script>
+    function myAlert(){
+        alert("The Form Has Been Submitted");
+    }
+</script>
+</body>
+</html>

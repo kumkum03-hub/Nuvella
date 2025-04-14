@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Romance | Nuvella</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Quicksand&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url('rombg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #4a0033;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 50px 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      color: #b30059;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #800040;
+      margin-bottom: 40px;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel {
+      display: flex;
+      gap: 30px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 10px;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .book-card {
+      min-width: 300px;
+      flex: none;
+      background: #fff0f5;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(255, 182, 193, 0.4);
+    }
+
+    .book-card img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .book-card h3 {
+      font-size: 1.1rem;
+      color: #b30059;
+      margin-bottom: 5px;
+    }
+
+    .book-card p {
+      font-size: 0.95rem;
+      color: #5e0035;
+    }
+
+    .nav-btns {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav-btns button {
+      background-color: #ffb6c1;
+      color: #800040;
+      font-size: 1.5rem;
+      padding: 10px 18px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .nav-btns button:hover {
+      background-color: #ffa6b0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Romance Reads</h1>
+    <p class="subtitle">Whispers of hearts, pink skies, and forever feelings 💘</p>
+
+    <div class="carousel-wrapper">
+      <div class="carousel" id="carousel">
+        <!-- Book Cards -->
+        <div class="book-card">
+          <a href="rombook1.html">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1725631773i/214269328.jpg" alt="Book 1">
+        </a>
+          <h3>Promise me a sunshine</h3>
+          <p>How do you find yourself after you lose the<br> one you loved the most?</p>
+        </div>
+      
+
+        <div class="book-card">
+          <a href="rombook2.html">
+          <img src="https://images.booksense.com/images/365/785/9798885785365.jpg" alt="Book 2">
+        </a>
+          <h3>Book Lovers</h3>
+          <p>In the city of second chances, even enemies<br> can fall in love.</p>
+        </div>
+
+        <div class="book-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMO5JNiAj4ynQMrtvX0J3XYs_qzfhrnubWCg&s" alt="Book 3">
+          <h3>Fearless</h3>
+          <p>She feared nothing—except falling for him.</p>
+        </div>
+
+        <div class="book-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkne1JnXMQqiHC2OISLV7f1asr5ErMWql90g&s" alt="Book 4">
+          <h3>Bridgerton</h3>
+          <p>A fake courtship. A real spark. A scandalous<br> Regency romance.</p>
+        </div>
+
+        <div class="book-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodQRx198ai21hMexE8msJmVr4sOWqiTFbPQ&s">
+          <h3>Consider Me</h3>
+          <p>A bad boy hockey star meets the girl who changes<br> his game.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-btns">
+      <button onclick="scrollCarousel(-1)">&#10094;</button>
+      <button onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const scrollAmount = 330; // Width of 1 book + gap
+
+    function scrollCarousel(direction) {
+      carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
