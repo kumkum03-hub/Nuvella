@@ -1,8 +1,13 @@
 # Nuvella
 
+![HTML5](https://img.shields.io/badge/HTML5-orange)
+![CSS3](https://img.shields.io/badge/CSS3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)
+
 ## Live Demo
 
-[View Live Project](nuvella-khaki.vercel.app)
+[View Live Project](https://nuvella-khaki.vercel.app)
 
 ## Overview
 
